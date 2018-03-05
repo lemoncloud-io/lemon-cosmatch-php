@@ -10,7 +10,8 @@ use Aws\Signature\SignatureV4;
 $access_key = getenv('ACCESS_KEY');
 $access_key = $access_key ? $access_key : 'AKIAJ4GJA3CJNAVCJ4RQ';           // default access-key
 $secret_key = getenv('SECRET_KEY');
-$url = 'https://mv7p4s8erd.execute-api.ap-northeast-2.amazonaws.com/prod/ingredient';
+// $url = 'https://mv7p4s8erd.execute-api.ap-northeast-2.amazonaws.com/prod/ingredient';
+$url = 'https://api.cosmatches.com/ingredient';
 $region = 'ap-northeast-2';
 
 if (empty($access_key) || empty($secret_key))
